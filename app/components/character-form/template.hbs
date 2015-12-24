@@ -1,0 +1,12 @@
+<form>
+  <p>
+    {{input value=character.name placeholder="Name"}}
+    {{input value=character.nickname placeholder="Nickname"}}
+  </p>
+  <p>
+    {{textarea value=character.description placeholder="Description" rows="10" cols="80"}}
+  </p>
+  <p>
+    <span {{action "createCharacter" character}} class="btn btn-submit">Save</span>
+  </p>
+</form>

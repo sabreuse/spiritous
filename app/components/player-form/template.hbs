@@ -1,0 +1,9 @@
+<form>
+  <p>
+    {{input value=player.name placeholder="Name"}}
+    {{input value=player.email placeholder="email"}}
+  </p>
+  <p>
+    <span {{action "createPlayer" player}} class="btn btn-submit">Save</span>
+  </p>
+</form>

@@ -1,1 +1,19 @@
-<h2>SPIRITS!!</h2>
+<h3>Players</h3>
+  <ul>
+    {{#each model.players as |player|}}
+    <li>
+      {{player.name}}: {{#link-to "player" player}}{{player.name}}{{/link-to}}
+    </li>
+    {{/each}}
+    <li>{{player-form player=model.player createPlayer="createPlayer"}}</li>
+  </ul>
+<h3>Characters</h3>
+  <ul>
+    {{#each model.characters as |character|}}
+      <li>
+        {{character.name}}: {{#link-to "character" character}}{{character.name}}{{/link-to}}
+      </li>
+    {{/each}}
+    <li>{{character-form character=model.character createCharacter="createCharacter"}}</li>
+
+  </ul>

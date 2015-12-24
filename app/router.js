@@ -6,6 +6,8 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('player', {path: '/player/:name'});
+  this.route('character', {path: '/character/:name'});
 });
 
 export default Router;
